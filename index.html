@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecosistema GPC 1000 | Osvaldo Cismondi</title>
+    <!-- Iconos de FontAwesome para las redes y WhatsApp -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --azul-oscuro: #0b1e36;
+            --azul-card: #132a48;
+            --dorado: #d4af37;
+            --dorado-hover: #f1c40f;
+            --naranja: #e67e22;
+            --naranja-hover: #d35400;
+            --blanco: #ffffff;
+            --texto-suave: #cbd5e1;
+            --verde-wa: #25d366;
+            --verde-wa-hover: #1eb954;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--azul-oscuro);
+            color: var(--blanco);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 480px;
+            background: var(--azul-card);
+            border: 2px solid var(--dorado);
+            border-radius: 16px;
+            padding: 30px 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .header h1 {
+            color: var(--dorado);
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .header p {
+            color: var(--texto-suave);
+            font-size: 0.95rem;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 16px 20px;
+            margin-bottom: 16px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        /* Botón 1: Descarga Regalo */
+        .btn-regalo {
+            background-color: var(--naranja);
+            color: var(--blanco);
+            border: 1px solid #f39c12;
+        }
+        .btn-regalo:hover {
+            background-color: var(--naranja-hover);
+            transform: translateY(-2px);
+        }
+
+        /* Botón 2: Comprar Libro */
+        .btn-libro {
+            background-color: transparent;
+            color: var(--dorado);
+            border: 2px solid var(--dorado);
+        }
+        .btn-libro:hover {
+            background-color: var(--dorado);
+            color: var(--azul-oscuro);
+            transform: translateY(-2px);
+        }
+
+        /* Botón 3: WhatsApp */
+        .btn-whatsapp {
+            background-color: var(--verde-wa);
+            color: var(--blanco);
+        }
+        .btn-whatsapp:hover {
+            background-color: var(--verde-wa-hover);
+            transform: translateY(-2px);
+        }
+
+        .btn-subtext {
+            display: block;
+            font-size: 0.78rem;
+            font-weight: normal;
+            margin-top: 4px;
+            opacity: 0.9;
+        }
+
+        /* Redes Sociales */
+        .social-title {
+            margin-top: 25px;
+            margin-bottom: 12px;
+            font-size: 0.85rem;
+            color: var(--dorado);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .social-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.08);
+            color: var(--blanco);
+            text-decoration: none;
+            font-size: 1.2rem;
+            border: 1px solid var(--dorado);
+            transition: all 0.3s ease;
+        }
+
+        .social-btn:hover {
+            background-color: var(--dorado);
+            color: var(--azul-oscuro);
+            transform: translateY(-2px);
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 0.75rem;
+            color: var(--texto-suave);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Encabezado -->
+        <div class="header">
+            <h1>Osvaldo Cismondi</h1>
+            <p>Ecosistema de Gestión Comercial GPC-1000</p>
+        </div>
+
+        <!-- Botón 1: Descargar Diagnóstico -->
+        <a href="https://docs.google.com/document/d/1ObLbGQJFNGrIK_YLasyJky1Gv9hGHi9XS2H8exdLSRw/edit?tab=t.0" class="btn btn-regalo" target="_blank" rel="noopener noreferrer">
+            <span><i class="fa-solid fa-gift"></i> DESCARGAR DIAGNÓSTICO GRATIS</span>
+            <span class="btn-subtext">Plantilla editable en Google Docs para tu negocio</span>
+        </a>
+
+        <!-- Botón 2: Comprar Libro -->
+        <a href="https://www.ecosistemagpc.com/productos/efecto-gpc-1000-incrementa-tus-ventas-1wofg/" class="btn btn-libro" target="_blank" rel="noopener noreferrer">
+            <span><i class="fa-solid fa-book"></i> COMPRAR LIBRO "EFECTO GPC 1000"</span>
+            <span class="btn-subtext">Aprende a solucionar los hallazgos de tu diagnóstico</span>
+        </a>
+
+        <!-- Botón 3: WhatsApp -->
+        <a href="https://wa.me/5493512313640" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+            <span><i class="fa-brands fa-whatsapp"></i> HABLAR POR WHATSAPP</span>
+            <span class="btn-subtext">Consulta directa con Osvaldo Cismondi</span>
+        </a>
+
+        <!-- Redes Sociales -->
+        <div class="social-title">Síguenos en Redes</div>
+        <div class="social-links">
+            <a href="https://www.instagram.com/osvaldocismondi/" class="social-btn" target="_blank" rel="noopener noreferrer" title="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/osvaldo.cismondi.9/" class="social-btn" target="_blank" rel="noopener noreferrer" title="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/osvaldo-jos%C3%A9-cismondi-02745a14b" class="social-btn" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.tiktok.com/@osvaldocismondi56" class="social-btn" target="_blank" rel="noopener noreferrer" title="TikTok">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+        </div>
+
+        <div class="footer">
+            <p>© Osvaldo Cismondi - Ecosistema GPC</p>
+        </div>
+    </div>
+
+</body>
+</html>
